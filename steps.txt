@@ -1,0 +1,15 @@
+create Facebook App and get app credentials
+    1. client_id
+    2.client_secret
+
+open config/services.php and set you fb app configurations
+    'facebook' => [
+        'client_id' => env('FACEBOOK_CLIENT_ID'),
+        'client_secret' => env('FACEBOOK_CLIENT_SECRET'),
+        'redirect' = env('CALLBACK_URL'),
+    ]
+
+open .evn and set the following values
+    FACEBOOK_CLIENT_ID=xxxxxxxxxxxxx
+    FACEBOOK_CLIENT_SECRET=xxxxxxxxxx
+    CALLBACK_URL=http://your-app-ulr/auth/facebook/callback
